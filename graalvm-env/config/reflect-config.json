@@ -1,6 +1,6 @@
 [
 {
-  "name":"com.github.tommyettinger.headless.HeadlessLauncher",
+  "name":"com.badlogic.gdx.tools.etc1.ETC1Compressor",
   "allDeclaredFields":true,
   "allDeclaredMethods":true
 },
@@ -92,10 +92,5 @@
 {
   "name":"java.time.ZonedDateTime",
   "methods":[{"name":"parse","parameterTypes":["java.lang.CharSequence"] }]
-},
-{
-  "name":"picocli.CommandLine$AutoHelpMixin",
-  "allDeclaredFields":true,
-  "allDeclaredMethods":true
 }
 ]

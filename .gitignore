@@ -69,3 +69,7 @@ nb-configuration.xml
 *~
 *.*#
 *#*#
+
+/graalvm-env/**.jar
+/graalvm-env/**.exe
+/graalvm-env/**.build_artifacts.txt

@@ -12,6 +12,9 @@ buildscript {
 	}
 }
 
+apply plugin: 'java-library'
+apply plugin: 'com.vanniktech.maven.publish'
+
 allprojects {
 	apply plugin: 'eclipse'
 	apply plugin: 'idea'
@@ -19,14 +22,17 @@ allprojects {
 
 configure(subprojects) {
 	apply plugin: 'java-library'
+	apply plugin: 'com.vanniktech.maven.publish'
 	sourceCompatibility = 1.8
 	compileJava {
 		options.incremental = true
 	}
 }
 
+[compileJava, compileTestJava, javadoc]*.options*.encoding = 'UTF-8'
+
 subprojects {
-	version = '1.11.0.0'
+	version = "$VERSION_NAME"
 	ext.appName = 'libgdx-etc1compressor'
 	repositories {
 		mavenLocal()
